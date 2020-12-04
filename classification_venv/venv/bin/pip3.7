@@ -1,0 +1,12 @@
+#!/bin/sh
+'''exec' "/Users/jenniferjensen/Documents/UofU1- Fall 2020/CS 6955 Deep Learning/CS_6955_Project/classification_venv/venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from pip._internal import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
